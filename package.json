@@ -1,0 +1,26 @@
+{
+  "name": "kanbanTrello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lerna run --scope kanbanTrello-frontend --scope kanbanTrello-backend --parallel start",
+    "start:backend": "lerna run --scope kanbanTrello-backend start",
+    "start:frontend": "lerna run --scope kanbanTrello-frontend start",
+    "build": "lerna run --scope kanbanTrello-frontend --scope kanbanTrello-backend build",
+    "build:backend": "lerna run --scope kanbanTrello-backend build",
+    "build:frontend": "lerna run --scope kanbanTrello-frontend build",
+    "test": "lerna run --scope kanbanTrello-frontend --scope kanbanTrello-backend test",
+    "test:backend": "lerna run --scope kanbanTrello-backend test",
+    "test:frontend": "lerna run --scope kanbanTrello-frontend test",
+    "bootstrap": "lerna bootstrap",
+    "lerna": "lerna",
+    "postinstall": "npm run bootstrap"
+  },
+  "author": "Kushal Jain",
+  "license": "ISC",
+  "dependencies": {
+    "lerna": "^3.22.1",
+    "prettier": "^2.0.5"
+  }
+}
